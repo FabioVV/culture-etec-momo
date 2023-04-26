@@ -1,0 +1,452 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color:  #191716;
+   
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+header{
+    border-bottom: 1px solid gray;
+    background-color: black;
+}
+
+footer{
+    margin-top: 70px;
+    border-top: 1px solid gray;
+    background-color: black;
+}
+
+
+h1{
+    color: #ffbf00;
+    text-align: center;
+    margin-top: 70px;
+}
+
+h2{
+    margin-top: 30px;
+    padding: 3rem;
+    color: rgb(251, 252, 255);
+    text-align: center;
+    font-size: 2rem;
+}
+
+p{
+    color: #dadff7;
+}
+
+
+video{
+    width: 70%;
+    height: auto;
+    border-radius:50px;
+}
+
+
+.img-body{
+    
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 30px;
+    display: block;
+}
+
+
+.text-container{
+    display: flex;
+    align-items: center;
+    box-shadow: 4.3px 8.6px 8.6px hsl(0deg 0% 0% / 0.37);
+    padding: 1rem;
+}
+
+
+
+
+.resumo{
+    padding: 1.3rem;
+}
+
+
+.img-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: min(90%, 85.5rem);
+    margin-inline: auto;
+    justify-content: space-evenly;
+}
+
+
+.container > *{
+    flex-basis: 100%;
+    
+}
+
+
+.links{
+    display: flex;
+    flex-direction: row;
+    gap: 1.7rem;
+    padding: 1rem;
+    
+    align-items: center;
+}
+
+
+.xxx{
+    visibility: hidden;
+}
+
+.links a{
+    text-decoration: none;
+    color: white;
+    transition: ease-in-out 250ms;
+    text-align: center;
+    font-size: 1.2rem; 
+   
+}
+
+.links a:hover{
+    color: 	#ffbf00;
+}
+
+/*#4B0082 ROXAO*/
+
+
+.f-text{
+    margin-top: 50px;
+    padding: 4rem;
+    text-align: center;
+    
+}
+
+.text{
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 1.55;
+}
+
+
+.logo{
+   
+    
+   
+}
+
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} 
+
+.menu > *{
+    flex-basis: 10%;
+}
+
+.img-nav{
+    
+    height: 150px;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 30px;
+    display: block;
+   
+}
+
+
+.parent {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+    
+.card {
+    text-align: center;
+    color: white;
+    padding: 1rem;
+        
+}
+
+.img-parceiro{
+    border-radius: 50%;
+    width: 50%;
+}
+
+
+p.name{
+    font-size: 1.9rem;
+    margin-bottom: 50px;
+}
+
+
+
+.parceiros.h2{
+    color: #50c878;
+}
+
+
+.img-body.baixar{
+    
+    
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+
+ 
+}
+
+
+.img-body.mun{
+    width: 20%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 30%;
+    display: block;
+    margin-inline: auto;
+}
+
+.img-body.menor{
+    width: 20%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin-inline: auto;
+    margin-top: 40px;
+}
+
+.text-container.baixar{
+    display: flex;
+    align-items: center;
+    box-shadow: none;
+    padding: 1rem;
+}
+
+
+.img-container.baixar{
+    justify-content: center;
+}
+
+
+.container.baixar{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: min(90%, 85.5rem);
+    margin-inline: auto;
+    justify-content: space-evenly;
+}
+
+
+
+.container.baixar > *{
+    flex-basis: 100%;
+    
+}
+
+
+.link{
+    text-decoration: none;
+    color: white;
+    transition: ease-in-out 250ms;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 2rem;
+    
+}
+
+.link:hover{
+    color: 	#50c878;
+}
+
+
+.ig{
+    color: #ffbf00;
+}
+
+
+.logo{
+   padding-left: 40px;
+}
+
+
+.home{
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.home a{
+    text-decoration: none;
+    color: white;
+    transition: ease-in-out 250ms;
+    text-align: center;
+    font-size: 1.3rem; 
+    border: #ffbf00 2px solid;
+    padding: .5rem;
+    background-color: #191716;
+    margin-inline: auto;
+}
+
+.home a:hover{
+   
+
+    background-color: #ffbf00;
+    color: #191716;
+}
+
+
+
+
+
+@media only screen and (max-width: 1158px) {
+    .container{
+       
+        flex-direction: column;
+     
+    
+    }
+    .logo{
+        margin-inline: auto;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .logo{
+        padding-left: 0px;
+     }
+     
+
+    .menu{
+       
+        flex-direction: column;
+     
+    
+    }
+    .logo{
+        margin-inline: auto;
+    }
+
+    .img-nav{
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+        object-position: bottom;
+        margin-inline: auto;
+        display: block;
+
+       
+    }
+
+
+    .links{
+        display: flex;
+        flex-direction: row;
+        gap: 1.7rem;
+        padding: 1rem;
+        margin-right: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    .img-body.mun{
+        width: 40%;
+    }
+    .img-body.menor{
+        width: 40%;
+    }
+
+    video{
+        width: 100%;
+        border-radius:10px;
+    }
+
+    .text{
+        font-size: 1em;
+    }
+}
+
+
+
+@media only screen and (max-width: 407px) {
+    .links{
+       
+        margin-right: 1px;
+      
+    }
+
+    .logo{
+        margin-inline: auto;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 407px) {
+    .links{
+       
+        margin-right: 1px;
+      
+    }
+
+    .logo{
+        margin-inline: auto;
+    }
+
+}
+
+
+
+
+/*flash msgs*/
+
+.removed{
+    transform: translateX(100vw);
+}
+
+#msg{
+    text-align: center;
+    font-size: larger;
+    background-color: rgb(255, 255, 255);
+    color: rgb(12, 12, 12);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: transform 1s 0s;
+}

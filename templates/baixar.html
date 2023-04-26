@@ -1,0 +1,48 @@
+{% extends 'base.html'%}
+
+{% block content %}
+
+
+<body>
+
+<h1>Baixe nosso mundo do minecraft aqui!</h1>
+
+<section class="resumo">
+
+    <h2>Vídeo demonstração do mundo: </h2>   
+
+    <div class="container baixar">
+        <div class="img-container baixar">
+            <video controls autoplay controlslist="nodownload">
+                <source src="{{url_for('static', filename='nirvana.mp4')}}" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+        </div>
+
+        <h2>Escaneie o QRcode com seu celular ou clique no link para baixar o mundo!</h2>
+
+        <div class="text-container baixar">
+            <img class="img-body mun" src="{{url_for('static', filename='mundo_minezada.png')}}" />
+        </div>
+        
+    </div>
+
+
+    <div class="container baixar">
+        <div class="img-container baixar">
+              <a class="link" href="{{url_for('download', filename='brasil.jpg')}}">
+                Clique aqui para baixar!
+                <img class="img-body menor" src="{{url_for('static', filename='minezada.png')}}"  />
+              </a>
+              
+        </div>
+    </div>
+    
+ 
+</section>
+
+
+
+</body>
+
+{% endblock%}

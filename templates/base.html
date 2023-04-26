@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Culture</title>
+
+    <meta name="keywords" content="TCC Etec">
+    <meta name="description" content="Site TCC sobre a midia e culturas">
+    <meta name="author" content="ETEC - Adriely, Sarah, Rodrigo, Gabriel">
+
+    <link rel="icon "  href="{{url_for('static',filename='favicon.ico')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='index.css')}}">
+
+</head>
+<body>
+
+    {%include 'nav.html'%}
+
+    {% with messages = get_flashed_messages() %}
+
+    {% if messages %}
+
+    {% for msg in messages %}
+        <div id="msg">{{msg}}</div>
+    {% endfor %}
+
+    {% endif %}
+
+
+    {% block content %}
+    {% endblock %}
+
+    {% endwith %}
+    <div class="home">
+        <a href='{{url_for("index")}}'>Home</a>
+    </div>
+    {%include 'footer.html'%}
+    <script src="{{url_for('static', filename='flash_msg.js')}}"></script>
+</body>
+</html>
