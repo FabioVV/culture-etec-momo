@@ -27,6 +27,10 @@ def parceiros():
 def baixar():
     return render_template('baixar.html')
 
+@app.route('/contato', methods=['GET'])
+def contato():
+    return render_template('contato.html')
+
 @app.route('/download/<path:filename>', methods=['GET'])
 def download(filename):
     if filename:

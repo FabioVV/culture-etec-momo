@@ -102,7 +102,6 @@ video{
     flex-direction: row;
     gap: 1.7rem;
     padding: 1rem;
-    
     align-items: center;
 }
 
@@ -285,6 +284,46 @@ p.name{
     background-color: #ffbf00;
     color: #191716;
 }
+
+
+
+
+
+
+
+
+
+
+.links.contato{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    margin-top: 7.7em;
+    margin-bottom: 7.7em;
+    border-radius: 10%;
+}
+
+.menu.contato{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social{
+    font-size: 1.5em;
+
+}
+
+
+.social-small{
+    font-size: .95em;
+    color: #ffbf00;
+}
+
+
+
+
+
+
 
 
 @media only screen and (max-width: 1158px) {
