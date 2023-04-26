@@ -74,6 +74,7 @@ video{
 
 .resumo{
     padding: 1.3rem;
+
 }
 
 .img-container{
@@ -122,6 +123,16 @@ video{
     color: 	#ffbf00;
     /*#4B0082 ROXAO*/
 }
+
+a.inactive{
+    font-weight: bold;
+}
+
+a.active{
+    color: #ffbf00;
+  
+}
+
 
 .f-text{
     margin-top: 50px;
@@ -220,6 +231,7 @@ p.name{
     align-items: center;
     box-shadow: none;
     padding: 1rem;
+   
 }
 
 .img-container.baixar{
@@ -287,13 +299,6 @@ p.name{
 
 
 
-
-
-
-
-
-
-
 .links.contato{
     display: flex;
     flex-direction: column;
@@ -318,11 +323,6 @@ p.name{
     font-size: .95em;
     color: #ffbf00;
 }
-
-
-
-
-
 
 
 
