@@ -31,13 +31,14 @@
 
     {% endif %}
 
-
+  
     {% block content %}
     {% endblock %}
+    
 
     {% endwith %}
     <div class="home">
-        <a href='{{url_for("index")}}'>Home</a>
+        <a href='{{url_for("index")}}'>Retornar para home <i class="fa-solid fa-house"></i></a>
     </div>
     {%include 'footer.html'%}
     <script type="text/javascript" src="/static/js/main.js"></script>

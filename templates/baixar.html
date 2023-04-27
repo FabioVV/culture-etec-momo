@@ -19,23 +19,27 @@
               </video>
         </div>
 
-        <h2>Escaneie o QRcode baixar o mundo!</h2>
+       
 
+        
+        
+    </div>
+    
+    <h2>Escaneie o QRcode baixar o mundo!</h2>
+
+    <div class="container baixar">
+        
         <div class="text-container baixar">
             <img class="img-body mun" src="{{url_for('static', filename='qrcode.png')}}" />
         </div>
-        
-    </div>
 
-
-    <div class="container baixar">
         <div class="img-container baixar">
-              <a class="link" href="{{url_for('download', filename='brasil.jpg')}}">
-                Ou clique aqui para baixar!
-                <img class="img-body menor" src="{{url_for('static', filename='minezada.png')}}"  />
-              </a>
-              
-        </div>
+            <a class="link" href="{{url_for('download', filename='brasil.jpg')}}">
+              Ou clique aqui <i class="fa-solid fa-download "></i>
+              <img class="img-body menor" src="{{url_for('static', filename='minezada.png')}}"  />
+            </a>
+            
+      </div>
     </div>
     
  
