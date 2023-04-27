@@ -21,14 +21,16 @@ html{
 }
 
 header{
+    border-top: 1px solid gray;
     border-bottom: 1px solid gray;
     background-color: black;
 }
 
 footer{
-    margin-top: 70px;
+    margin-top: 100px;
     border-top: 1px solid gray;
     background-color: black;
+
 }
 
 h1{
@@ -135,10 +137,10 @@ a.active{
 
 
 .f-text{
-    margin-top: 50px;
-    padding: 4rem;
-    text-align: center;
     
+    padding: 3rem;
+    text-align: center;
+
 }
 
 .text{
@@ -302,16 +304,19 @@ p.name{
 .links.contato{
     display: flex;
     flex-direction: column;
-    border: 2px solid white;
+
     margin-top: 7.7em;
     margin-bottom: 7.7em;
-    border-radius: 10%;
+   
 }
 
 .menu.contato{
+    margin-top: 3em;
     display: flex;
     justify-content: space-evenly;
 }
+
+
 
 .social{
     font-size: 1.5em;
@@ -378,6 +383,31 @@ p.name{
     .text{
         font-size: 1em;
     }
+
+
+
+    .links.contato{
+        margin-top: 2em;
+        margin-bottom: 1.5em;
+    }
+    
+
+    .menu.contato{
+        margin-top: 1em;
+    }
+    
+    
+    .social{
+        font-size: 1.7em;
+
+    }
+    
+    
+    .social-small{
+        font-size: 1em;
+    }
+    
+    
 }
 @media only screen and (max-width: 407px) {
     .links{
