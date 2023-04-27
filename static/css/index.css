@@ -60,9 +60,9 @@ video{
 .img-body{
     
     width: 100%;
-    height: 300px;
+    height: 400px;
     object-fit: cover;
-    object-position: bottom;
+    
     border-radius: 30px;
     display: block;
 }
@@ -72,6 +72,8 @@ video{
     align-items: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 1rem;
+    max-width: 650px;
+    
 }
 
 .resumo{
@@ -99,6 +101,29 @@ video{
     flex-basis: 100%;
     
 }
+
+
+
+
+.container.about{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: min(90%, 85.5rem);
+    margin-inline: auto;
+    justify-content: space-evenly;
+}
+
+.container.about > *{
+    flex-basis: 100%;
+}
+
+
+
+
+
+
+
 
 .links{
     display: flex;
@@ -144,9 +169,15 @@ a.active{
 }
 
 .text{
-    font-size: 1.2rem;
+    font-size: 1.26rem;
     text-align: justify;
     line-height: 1.55;
+    white-space:  pre-line;
+}
+
+.text.sobre{
+    white-space: normal;
+    padding: 1.64rem;
 }
 
 .menu{
@@ -319,23 +350,40 @@ p.name{
 .social-small{
     font-size: .95em;
     color: #ffbf00;
+    transition: ease-in-out 250ms
+}
+
+.social-small:hover{
+    font-size: 1.4em;
 }
 
 
 
-@media only screen and (max-width: 1158px) {
+
+@media only screen and (max-width: 1165px) {
     .container{
         flex-direction: column;
+    }
+    .text-container{
+        justify-content: center;
+        align-self: center;
     }
     .logo{
         margin-inline: auto;
     }
+    .img-body{
+        min-width: 60%;
+        align-items: center;
+        margin: 0 auto;
+    }
+    
 
 }
 
 @media only screen and (max-width: 800px) {
     .container{
         flex-direction: column;
+      
     }
     .logo{
         margin-inline: auto;
@@ -352,6 +400,9 @@ p.name{
     .img-body.menor{
         width: 25%;
 
+    }
+    .text.sobre{
+       font-size: 1.1em;
     }
 
 }
@@ -375,7 +426,10 @@ p.name{
         margin-inline: auto;
         display: block;
     }
-
+    .img-body{
+        height: 270px;
+    }
+    
     .links{
         display: flex;
         flex-direction: row;
@@ -398,17 +452,14 @@ p.name{
     }
 
     .text{
-        font-size: 1em;
+        font-size: 0.9em;
     }
-
-
 
     .links.contato{
         margin-top: 2em;
         margin-bottom: 1.5em;
     }
     
-
     .menu.contato{
         margin-top: 1em;
     }
@@ -418,7 +469,6 @@ p.name{
         font-size: 1.7em;
 
     }
-    
     
     .social-small{
         font-size: 1em;
