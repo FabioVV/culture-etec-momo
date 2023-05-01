@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<body>
+
+    <h1>Cultura Africana</h1>
+    
+    <section class="resumo">
+
+        <div class="culture-container">
+
+            <div class="img-container">
+                <img class="slides" src="{{url_for('static',filename='africac1.jpg')}}" style="width:100%">
+                <img class="slides" src="{{url_for('static',filename='africac2.jpg')}}" style="width:100%">
+                <img class="slides" src="{{url_for('static',filename='africac3.jpg')}}"" style="width:100%">
+                <img class="slides" src="{{url_for('static',filename='africana.jpg')}}"" style="width:100%">
+            </div>
+            <div>
+                <p class="text">
+                    A cultura africana é extremamente diversa e abrange uma vasta gama de tradições, religiões, idiomas, culinárias, danças e manifestações artísticas. É importante lembrar que a África não é um país, mas sim um continente com mais de 50 países e quase 1 bilhão de habitantes. A cultura africana deve ser sempre observada no plural, devido à sua existência milenar e sua ampla diversidade.
+                    A roupa tradicional africana é caracterizada pelo uso de cores vivas e, em geral, os povos africanos tradicionais usam o algodão como fibra têxtil. Em diferentes culturas, a forma e a cor das roupas marcam a pertença a um grupo ou classe social. Além disso, certas peças de vestuário são usadas para eventos especiais. Em todos os casos, cores brilhantes como vermelho, amarelo e verde são as mais comuns. Hoje em dia, gente de todo o mundo associa as cores garridas à cultura africana.
+                    A cultura africana teve uma grande influência na formação cultural brasileira, devido à escravização de africanos e sua posterior vinda para o Brasil. A diversidade de origem dos africanos escravizados no Brasil reflete diretamente a variedade de povos existentes na África. Muitos são os aspectos culturais que sofreram influência africana no país, como a religião (Candomblé e Umbanda), a culinária (com vários temperos e pratos típicos, como o vatapá, o caruru e o acarajé) e a música (os ritmos africanos estão presentes em quase todos os estilos brasileiros, como maxixe, samba, choro e bossa-nova). Na dança, a capoeira é uma dança-luta praticada pelos antigos escravos criada no Brasil.
+                    É importante lembrar que a cultura africana é muitas vezes estereotipada pela sociedade. Por exemplo, muitas pessoas associam a África à pobreza, à fome e à doença, ignorando a riqueza e a diversidade cultural do continente. Além disso, há estereótipos relacionados à religião, como a ideia de que os cultos africanos são bruxaria ou feitiçaria.
+                    Em resumo, a cultura africana é extremamente diversa e abrange uma vasta gama de tradições, religiões, idiomas, culinárias, danças e manifestações artísticas. A cultura africana teve uma grande influência na formação cultural brasileira, devido à escravização.
+                </p>
+            </div>
+            
+        </div>
+
+        <div class="home">
+            <a href='{{url_for("indigena")}}'><i class="fa-solid fa-arrow-left"></i> Cultura anterior  </a>
+            <a href='{{url_for("brasil")}}'> Voltar para o inicio <i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+        
+    </section>
+<body>
+
+
+
+{% endblock %}
+
+
+<!--
+
+
+<div class="culture-container">
+
+            <div>
+                <img class="img-body-culture" style="float: left;" src="{{url_for('static',filename='brazilc1.jpg')}}" 
+                        alt="">
+             </div>
+                
+            <p>A cultura brasileira é representada pelo conjunto de tradições, manifestações culturais, costumes, culinária e religião dos povos que viveram no país ao longo da história, 
+                como mencionado em significados.com.br. 
+                A formação cultural do Brasil é o resultado da miscigenação entre o indígena, o negro e o imigrante europeu. De maneira simplificada, pode-se dizer que a
+                 formação cultural do Brasil é o resultado da miscigenação entre o indígena, o negro e o imigrante europeu. 
+                Mas também vieram para o Brasil, povos de outras nacionalidades, trazendo consigo suas tradições e costumes, contribuindo para essa enorme pluralidade.
+            </p>
+
+        </div>
+
+
+-->

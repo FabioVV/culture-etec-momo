@@ -59,10 +59,9 @@ video{
 
 .img-body{
     
-    width: 100%;
+    width: 90%;
     height: 400px;
     object-fit: cover;
-    
     border-radius: 30px;
     display: block;
 }
@@ -83,6 +82,7 @@ video{
 
 .img-container{
     display: flex;
+    flex-direction: column;
     align-items: center;
     width: 100%;
 
@@ -360,6 +360,34 @@ p.name{
 
 
 
+.culture-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: min(90%, 85.5rem);
+    margin-inline: auto;
+    justify-content: space-evenly;
+}
+
+.culture-container > *{
+    flex-basis: 100%;
+    
+}
+
+
+.slides{
+    width: 90%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 30px;
+    display: block;
+}
+
+.mySlides {display:none;}
+
+
+
+
 @media only screen and (max-width: 1165px) {
     .container{
         flex-direction: column;
@@ -379,6 +407,8 @@ p.name{
     
 
 }
+
+
 
 @media only screen and (max-width: 800px) {
     .container{

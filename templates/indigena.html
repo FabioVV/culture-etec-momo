@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<body>
+
+    <h1>Cultura Indigena</h1>
+    
+    <section class="resumo">
+
+        <div class="culture-container">
+
+            <div class="img-container">
+                
+                <img class="slides" src="{{url_for('static',filename='indigenac2.jpg')}}" style="width:100%">
+                <img class="slides" src="{{url_for('static',filename='indigenac3.jpg')}}"" style="width:100%">
+                <img class="slides" src="{{url_for('static',filename='indigenac4.jpg')}}" style="width:100%">
+                <img class="slides" src="{{url_for('static',filename='indigenac5.jpg')}}"" style="width:100%">
+            </div>
+            <div>
+                <p class="text">
+                     A cultura indígena é parte fundamental da formação da identidade nacional brasileira, sendo que muitos elementos da nossa cultura têm origem na cultura dos primeiros povos que habitaram este território. Nomes de bairros, ruas, cidades e estados, bem como diversos animais e plantas, têm nomes indígenas e a maior parte deles é originária do tronco linguístico tupi. A cultura indígena é composta por uma enorme diversidade cultural representada por civilizações autônomas, com modos de pensar e agir únicos, sendo que existem no Brasil 896,9 mil indígenas distribuídos em 305 etnias diferentes, que falam 274 idiomas.
+                     Apesar da importância da cultura indígena na formação da identidade nacional, a sociedade impõe estereótipos e preconceitos sobre os povos indígenas. Um estereótipo comum é a ideia de que todos os índios são iguais, quando, na verdade, existem muitas diferenças culturais e étnicas entre as tribos . Outro estereótipo é a ideia de que os índios são preguiçosos e pouco produtivos, quando, na verdade, eles possuem um modo de vida diferente do ocidental e têm uma relação diferente com a natureza e com o trabalho
+                     Apesar dos estereótipos e preconceitos, a cultura indígena implementa a cultura brasileira de diversas formas, como na música, na culinária e na medicina popular. A mandioca e o milho, por exemplo, são itens fundamentais da culinária indígena e são muito utilizados pelos Brasil.
+                </p>
+            </div>
+            
+        </div>
+
+        <div class="home">
+            <a href='{{url_for("europa")}}'><i class="fa-solid fa-arrow-left"></i> Cultura anterior  </a>
+            <a href='{{url_for("africa")}}'> Próxima cultura <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </section>
+<body>
+
+
+
+{% endblock %}
+
+
+<!--
+
+
+<div class="culture-container">
+
+            <div>
+                <img class="img-body-culture" style="float: left;" src="{{url_for('static',filename='brazilc1.jpg')}}" 
+                        alt="">
+             </div>
+                
+            <p>A cultura brasileira é representada pelo conjunto de tradições, manifestações culturais, costumes, culinária e religião dos povos que viveram no país ao longo da história, 
+                como mencionado em significados.com.br. 
+                A formação cultural do Brasil é o resultado da miscigenação entre o indígena, o negro e o imigrante europeu. De maneira simplificada, pode-se dizer que a
+                 formação cultural do Brasil é o resultado da miscigenação entre o indígena, o negro e o imigrante europeu. 
+                Mas também vieram para o Brasil, povos de outras nacionalidades, trazendo consigo suas tradições e costumes, contribuindo para essa enorme pluralidade.
+            </p>
+
+        </div>
+
+
+-->

@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<body>
+
+    <h1>Cultura brasileira</h1>
+    
+    <section class="resumo">
+
+        <div class="culture-container">
+
+            <div class="img-container">
+                <img class="slides" src="{{url_for('static',filename='brazilc1.jpg')}}" style="width:100%">
+                <img class="slides" src="{{url_for('static',filename='brazilc2.jpg')}}" style="width:100%">
+                <img class="slides" src="{{url_for('static',filename='brazilc3.jpg')}}"" style="width:100%">
+                <img class="slides" src="{{url_for('static',filename='brazilc4.jpg')}}"" style="width:100%">
+            </div>
+            <div>
+                <p class="text">
+                    A cultura brasileira é representada pelo conjunto de tradições, manifestações culturais, costumes, culinária e religião dos povos que viveram no país ao longo da história, como mencionado em significados.com.br. A formação cultural do Brasil é o resultado da miscigenação entre o indígena, o negro e o imigrante europeu. De maneira simplificada, pode-se dizer que a formação cultural do Brasil é o resultado da miscigenação entre o indígena, o negro e o imigrante europeu. Mas também vieram para o Brasil, povos de outras nacionalidades, trazendo consigo suas tradições e costumes, contribuindo para essa enorme pluralidade.
+                </p>
+            </div>
+            
+        </div>
+        <div class="home">
+            
+            <a href='{{url_for("europa")}}'> Próxima cultura <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </section>
+<body>
+
+
+
+{% endblock %}
+
+
+<!--
+
+
+<div class="culture-container">
+
+            <div>
+                <img class="img-body-culture" style="float: left;" src="{{url_for('static',filename='brazilc1.jpg')}}" 
+                        alt="">
+             </div>
+                
+            <p>A cultura brasileira é representada pelo conjunto de tradições, manifestações culturais, costumes, culinária e religião dos povos que viveram no país ao longo da história, 
+                como mencionado em significados.com.br. 
+                A formação cultural do Brasil é o resultado da miscigenação entre o indígena, o negro e o imigrante europeu. De maneira simplificada, pode-se dizer que a
+                 formação cultural do Brasil é o resultado da miscigenação entre o indígena, o negro e o imigrante europeu. 
+                Mas também vieram para o Brasil, povos de outras nacionalidades, trazendo consigo suas tradições e costumes, contribuindo para essa enorme pluralidade.
+            </p>
+
+        </div>
+
+
+-->

@@ -31,6 +31,35 @@ def baixar():
 def contato():
     return render_template('contato.html')
 
+
+
+
+
+##CULTURAS ABAIXO
+
+@app.route('/brasil', methods=['GET'])
+def brasil():
+    return render_template('brasil.html')
+
+@app.route('/europa', methods=['GET'])
+def europa():
+    return render_template('europa.html')
+
+@app.route('/indigena', methods=['GET'])
+def indigena():
+    return render_template('indigena.html')
+
+@app.route('/africa', methods=['GET'])
+def africa():
+    return render_template('africa.html')
+
+##
+
+
+
+
+
+
 @app.route('/download/<path:filename>', methods=['GET'])
 def download(filename):
     if filename:

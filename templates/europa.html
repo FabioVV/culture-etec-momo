@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<body>
+
+    <h1>Cultura Européia</h1>
+    
+    <section class="resumo">
+
+        <div class="culture-container">
+
+            <div class="img-container">
+                <img class="slides" src="{{url_for('static',filename='europec1.jpg')}}" style="width:100%">
+                <img class="slides" src="{{url_for('static',filename='europec3.jpg')}}"" style="width:100%">
+                <img class="slides" src="{{url_for('static',filename='europec4.jpg')}}"" style="width:100%">
+                <img class="slides" src="{{url_for('static',filename='europec5.jpg')}}"" style="width:100%">
+                <img class="slides" src="{{url_for('static',filename='europec6.jpg')}}"" style="width:100%">
+                <img class="slides" src="{{url_for('static',filename='europec7.jpg')}}"" style="width:100%">
+            </div>
+            <div>
+                <p class="text">
+                    A Europa é um continente diverso, com uma rica história cultural. A região abriga várias culturas sobrepostas que se desenvolveram ao longo dos séculos. A cultura europeia é frequentemente associada a marcos históricos, como a Renascença, o Iluminismo e a Revolução Industrial. Além disso, a cultura europeia é muito conhecida por sua arte, como a pintura renascentista, a música clássica e a arquitetura gótica. A cultura europeia também é muito conhecida por sua gastronomia, incluindo pratos como a pizza italiana, o croissant francês e o fish and chips britânico.
+                    Embora a cultura europeia tenha influenciado muito a América Latina, também há muitas maneiras pelas quais a cultura brasileira influenciou a Europa. A música brasileira, como a Bossa Nova e a Samba, tornou-se popular na Europa nas décadas de 1950 e 1960. Além disso, muitos pratos brasileiros, como a feijoada e o churrasco, tornaram-se populares em toda a Europa. A moda brasileira também teve um impacto significativo na Europa, com marcas como Havaianas e Osklen ganhando popularidade em todo o continente.
+                </p>
+            </div>
+            
+        </div>
+        
+        <div class="home">
+            <a href='{{url_for("brasil")}}'><i class="fa-solid fa-arrow-left"></i> Cultura anterior  </a>
+            <a href='{{url_for("indigena")}}'> Próxima cultura <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </section>
+<body>
+
+
+
+{% endblock %}
+
+
+<!--
+
+
+<div class="culture-container">
+
+            <div>
+                <img class="img-body-culture" style="float: left;" src="{{url_for('static',filename='brazilc1.jpg')}}" 
+                        alt="">
+             </div>
+                
+            <p>A cultura brasileira é representada pelo conjunto de tradições, manifestações culturais, costumes, culinária e religião dos povos que viveram no país ao longo da história, 
+                como mencionado em significados.com.br. 
+                A formação cultural do Brasil é o resultado da miscigenação entre o indígena, o negro e o imigrante europeu. De maneira simplificada, pode-se dizer que a
+                 formação cultural do Brasil é o resultado da miscigenação entre o indígena, o negro e o imigrante europeu. 
+                Mas também vieram para o Brasil, povos de outras nacionalidades, trazendo consigo suas tradições e costumes, contribuindo para essa enorme pluralidade.
+            </p>
+
+        </div>
+
+
+-->
